@@ -14,13 +14,10 @@ namespace cadasfuncionario
     {
         public forminicio()
         {
-
+            
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
+         //fsafdsfdsfsdjfisbfbhbjhsakdjbhwaefubhweruwebhr
 
         private void Form2_Load(object sender, EventArgs e)
         {
