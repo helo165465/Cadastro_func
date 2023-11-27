@@ -1,11 +1,11 @@
 ﻿using System;
 
-public static class ValidarCPF
+public static class Validar
 {
 
-    public static bool ValidaCPF(string cpf)
+    public static bool CPF(string cpf)
     {
-       cpf = cpf.Replace(".", "");
+        cpf = cpf.Replace(".", "");
         cpf = cpf.Replace("-", "");
 
         if (cpf.Length != 11)
@@ -109,6 +109,19 @@ public static class ValidarCPF
             {
                 return false;
             }
+        }
+
+    }
+    public static bool Email(string email)
+    {
+        try
+        {
+            var Email = new System.Net.Mail.MailAddress(email);
+            return Email.Address == email;
+        }
+        catch
+        {
+            return false;
         }
     }
 }
