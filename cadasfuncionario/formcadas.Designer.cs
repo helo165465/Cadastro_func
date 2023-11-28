@@ -29,10 +29,14 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.tx_data = new System.Windows.Forms.DateTimePicker();
+            this.label10 = new System.Windows.Forms.Label();
+            this.tx_salario = new System.Windows.Forms.TextBox();
             this.cb_estado = new System.Windows.Forms.ComboBox();
             this.tx_cpf = new System.Windows.Forms.TextBox();
             this.tx_rua = new System.Windows.Forms.TextBox();
@@ -42,7 +46,6 @@
             this.label12 = new System.Windows.Forms.Label();
             this.cb_funcao = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.tx_data = new System.Windows.Forms.MaskedTextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.tx_tel = new System.Windows.Forms.MaskedTextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -56,17 +59,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.tx_salario = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.tx_gmail = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Navy;
+            this.panel2.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.panel2.Controls.Add(this.button4);
             this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.button1);
@@ -75,9 +75,20 @@
             this.panel2.Size = new System.Drawing.Size(149, 577);
             this.panel2.TabIndex = 1;
             // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Mongolian Baiti", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(15, 231);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(106, 52);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "Consultar Funcionário";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.Navy;
+            this.button3.BackColor = System.Drawing.Color.CornflowerBlue;
             this.button3.Font = new System.Drawing.Font("Mongolian Baiti", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(36, 31);
@@ -102,7 +113,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Mongolian Baiti", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(15, 213);
+            this.button1.Location = new System.Drawing.Point(15, 147);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(106, 52);
             this.button1.TabIndex = 0;
@@ -112,9 +123,8 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Navy;
-            this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.tx_gmail);
+            this.panel1.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.panel1.Controls.Add(this.tx_data);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.tx_salario);
             this.panel1.Controls.Add(this.cb_estado);
@@ -126,7 +136,6 @@
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.cb_funcao);
             this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.tx_data);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.tx_tel);
             this.panel1.Controls.Add(this.label7);
@@ -142,8 +151,34 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(12, 31);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(734, 486);
+            this.panel1.Size = new System.Drawing.Size(734, 433);
             this.panel1.TabIndex = 2;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // tx_data
+            // 
+            this.tx_data.Location = new System.Drawing.Point(367, 235);
+            this.tx_data.Name = "tx_data";
+            this.tx_data.Size = new System.Drawing.Size(200, 22);
+            this.tx_data.TabIndex = 31;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(4, 370);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(72, 16);
+            this.label10.TabIndex = 28;
+            this.label10.Text = "SALÁRIO";
+            // 
+            // tx_salario
+            // 
+            this.tx_salario.Location = new System.Drawing.Point(80, 370);
+            this.tx_salario.Name = "tx_salario";
+            this.tx_salario.Size = new System.Drawing.Size(188, 22);
+            this.tx_salario.TabIndex = 27;
             // 
             // cb_estado
             // 
@@ -285,14 +320,6 @@
             this.label9.TabIndex = 15;
             this.label9.Text = "FUNÇÃO:";
             // 
-            // tx_data
-            // 
-            this.tx_data.Location = new System.Drawing.Point(388, 236);
-            this.tx_data.Mask = "00/00/0000";
-            this.tx_data.Name = "tx_data";
-            this.tx_data.Size = new System.Drawing.Size(74, 22);
-            this.tx_data.TabIndex = 14;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -308,7 +335,7 @@
             // tx_tel
             // 
             this.tx_tel.Location = new System.Drawing.Point(405, 154);
-            this.tx_tel.Mask = "(00)0000-0000";
+            this.tx_tel.Mask = "(00)0000-00000";
             this.tx_tel.Name = "tx_tel";
             this.tx_tel.Size = new System.Drawing.Size(97, 22);
             this.tx_tel.TabIndex = 12;
@@ -417,55 +444,19 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(42, 31);
+            this.label1.Location = new System.Drawing.Point(115, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(474, 31);
+            this.label1.Size = new System.Drawing.Size(451, 31);
             this.label1.TabIndex = 0;
-            this.label1.Text = "CADASTRO DE FUNCIONÁRIO:";
+            this.label1.Text = "CADASTRE O FUNCIONÁRIO:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // tx_salario
-            // 
-            this.tx_salario.Location = new System.Drawing.Point(80, 370);
-            this.tx_salario.Name = "tx_salario";
-            this.tx_salario.Size = new System.Drawing.Size(188, 22);
-            this.tx_salario.TabIndex = 27;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(4, 370);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(72, 16);
-            this.label10.TabIndex = 28;
-            this.label10.Text = "SALÁRIO";
-            // 
-            // tx_gmail
-            // 
-            this.tx_gmail.Location = new System.Drawing.Point(372, 370);
-            this.tx_gmail.Name = "tx_gmail";
-            this.tx_gmail.Size = new System.Drawing.Size(188, 22);
-            this.tx_gmail.TabIndex = 29;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(298, 373);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(58, 16);
-            this.label11.TabIndex = 30;
-            this.label11.Text = "EMAIL:";
             // 
             // formcadas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkBlue;
-            this.BackgroundImage = global::cadasfuncionario.Properties.Resources._33;
+            this.BackgroundImage = global::cadasfuncionario.Properties.Resources.wp1920773;
             this.ClientSize = new System.Drawing.Size(899, 529);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
@@ -492,7 +483,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox tx_rg;
-        private System.Windows.Forms.MaskedTextBox tx_data;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
@@ -510,8 +500,8 @@
         private System.Windows.Forms.ComboBox cb_estado;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox tx_salario;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox tx_gmail;
+        private System.Windows.Forms.DateTimePicker tx_data;
+        private System.Windows.Forms.Button button4;
     }
 }
 

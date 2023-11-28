@@ -39,9 +39,9 @@ namespace cadasfuncionario
         {
             try
             {
-                 Banco_Dados conexao = new Banco_Dados();
+                Banco_Dados conexao = new Banco_Dados();
 
-                var comando = conexao.Comando("INSERT INTO Funcionario VALUES (null, @nam, @date, @cpf, @rg, @fone, @gmail, @reco, @city, @est, @fun, @sal)");
+                var comando = conexao.Comando("INSERT INTO Funcionario VALUES (null, @nam, @date, @cpf, @rg, @fone, @gmail, @city, @est, @fun, @sal, @rua)");
 
                 comando.Parameters.AddWithValue("null", funcionario.Id);
                 comando.Parameters.AddWithValue("@nam", funcionario.Nome);
@@ -50,11 +50,11 @@ namespace cadasfuncionario
                 comando.Parameters.AddWithValue("@rg", funcionario.Rg);
                 comando.Parameters.AddWithValue("@fone", funcionario.Telefone);
                 comando.Parameters.AddWithValue("@gmail", funcionario.Email);
-                comando.Parameters.AddWithValue("@reco", funcionario.Endereco);
                 comando.Parameters.AddWithValue("@city", funcionario.Cidade);
                 comando.Parameters.AddWithValue("@est", funcionario.Estado);
                 comando.Parameters.AddWithValue("@fun", funcionario.Funcao);
                 comando.Parameters.AddWithValue("@sal", funcionario.Salario);
+                comando.Parameters.AddWithValue("@rua", funcionario.Rua);
 
                 var resultado = comando.ExecuteNonQuery();
 
@@ -84,64 +84,74 @@ namespace cadasfuncionario
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Funcionario fanc = new Funcionario();
-            fanc.Nome = tx_nome.Text;
-            fanc.Cpf = tx_cpf.Text;
-            fanc.Rg = tx_rg.Text;               
-            fanc.Telefone = tx_tel.Text;
-            fanc.Endereco = tx_rua.Text;
-            fanc.Cidade = tx_cidade.Text;
-            fanc.Estado = cb_estado.Text;
-            fanc.Salario = double.Parse(tx_salario.Text);
-            fanc.Email = tx_gmail.Text;
-            fanc.DataNascimento = Convert.ToDateTime(tx_date.Text);
-            if (cb_funcao.Text == "Médico")
+                try
             {
-                MessageBox.Show("Cadastro concluído!");
-                MessageBox.Show("Seu salário é de R$ 15.000,00");
-                Close();
-            }
-            if (cb_funcao.Text == "Policial")
-            {
-                MessageBox.Show("Cadastro concluído!");
-                MessageBox.Show("Seu salário é de R$ 17.000,00");
-                Close();
+                Funcionario fanc = new Funcionario();
+                fanc.Nome = tx_nome.Text;
+                fanc.Cpf = tx_cpf.Text;
+                fanc.Rg = tx_rg.Text;
+                fanc.Telefone = tx_tel.Text;
+                fanc.Rua = tx_rua.Text;
+                fanc.Cidade = tx_cidade.Text;
+                fanc.Estado = cb_estado.Text;
+                fanc.Salario = double.Parse(tx_salario.Text);
+                fanc.Email = tx_email.Text;
+                fanc.DataNascimento = Convert.ToDateTime(tx_data.Text);
+                fanc.Funcao = cb_funcao.Text;
+                if (ExistemTextBoxsVazios() == true)
+                {
+                    MessageBox.Show("Preencha todos os campos");
+                }
+                else if (Validar.CPF(fanc.Cpf) == false)
+                {
+                    MessageBox.Show("CPF inválido, tente novamente!");
+                 
+                }
+                else if (Validar.Email(fanc.Email) == false)
+                {
+                    MessageBox.Show("Email inválido, tente novamente!");
+                }
+                else
+                {
+                    inserir(fanc);
+                }
+
+                if (cb_funcao.Text == "Médico")
+                {
+                    MessageBox.Show("Cadastro concluído!");
+                    MessageBox.Show("Seu salário é de R$ 15.000,00");
+                    Close();
+                }
+                if (cb_funcao.Text == "Policial")
+                {
+                    MessageBox.Show("Cadastro concluído!");
+                    MessageBox.Show("Seu salário é de R$ 17.000,00");
+                    Close();
+
+                }
+                if (cb_funcao.Text == "Advogado")
+                {
+                    MessageBox.Show("Cadastro concluído!");
+                    MessageBox.Show("Seu salário é de R$ 12.000,00");
+                    Close();
+
+                }
+                if (cb_funcao.Text == "Professor")
+                {
+                    MessageBox.Show("Seu salário é de R$ 10.000,00");
+                    Close();
+                }
 
             }
-            if (cb_funcao.Text == "Advogado")
+            catch (Exception ex)
             {
-                MessageBox.Show("Cadastro concluído!");
-                MessageBox.Show("Seu salário é de R$ 12.000,00");
-                Close();
-
+                MessageBox.Show(ex.Message);
             }
-            if (cb_funcao.Text == "Professor")
-            {
-                MessageBox.Show("Cadastro concluído!");
-                MessageBox.Show("Seu salário é de R$ 10.000,00");
-                Close();
-            }
-
-            if (Validar.CPF(tx_cpf.Text) == false)
-            {
-                MessageBox.Show("CPF inválido, tente novamente!");
-                Close();
-            }
-            else if (Validar.Email(tx_gmail.Text) == false)
-            {
-                MessageBox.Show("Email inválido, tente novamente!");
-            }
-            else if(ExistemTextBoxsVazios() == true)
-            {
-                ExistemTextBoxsVazios();
-            }
-            else
-            {
-                inserir();
-            }
+        }
             
 
-        }
+          
+   
 
         private void label8_Click(object sender, EventArgs e)
         {
@@ -155,7 +165,6 @@ namespace cadasfuncionario
             tx_tel.Clear();
             tx_cpf.Clear();
             tx_rg.Clear();
-            tx_data.Clear();
             tx_rua.Clear();
             tx_cidade.Clear();
         }
@@ -184,5 +193,19 @@ namespace cadasfuncionario
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Consultar_Funcionario con = new Consultar_Funcionario();
+            this.Visible = false;
+            con.ShowDialog();
+            this.Visible = true;
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
+
