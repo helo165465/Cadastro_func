@@ -98,20 +98,33 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CadasEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadasEmp.Designer.cs">
+      <DependentUpon>CadasEmp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Config\Banco_Dados.cs" />
+    <Compile Include="ConsultarEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarEmp.Designer.cs">
+      <DependentUpon>ConsultarEmp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Consultar_Funcionario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Consultar_Funcionario.Designer.cs">
       <DependentUpon>Consultar_Funcionario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Uteis\DAOHhelper.cs" />
-    <Compile Include="forminicio.cs">
+    <Compile Include="Empresa.cs" />
+    <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forminicio.Designer.cs">
-      <DependentUpon>forminicio.cs</DependentUpon>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Uteis\DAOHhelper.cs" />
     <Compile Include="formcadas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,15 +134,22 @@
     <Compile Include="Funcionario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ValidarCNPJ.cs" />
     <Compile Include="Validarcpf.cs" />
+    <EmbeddedResource Include="CadasEmp.resx">
+      <DependentUpon>CadasEmp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarEmp.resx">
+      <DependentUpon>ConsultarEmp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Consultar_Funcionario.resx">
       <DependentUpon>Consultar_Funcionario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forminicio.resx">
-      <DependentUpon>forminicio.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="formcadas.resx">
       <DependentUpon>formcadas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

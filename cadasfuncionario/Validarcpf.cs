@@ -1,5 +1,8 @@
 ﻿using System;
-
+using System.Linq;
+using System.Text.RegularExpressions;
+using System.Linq;
+using System.Text.RegularExpressions;
 public static class Validar
 {
 
@@ -124,4 +127,9 @@ public static class Validar
             return false;
         }
     }
+
+
+
+
+    
 }

@@ -57,5 +57,13 @@ namespace cadasfuncionario
         {
 
         }
+
+        private void bt_voltar_Click(object sender, EventArgs e)
+        {
+            formcadas li = new formcadas();
+            this.Visible = false;
+            li.ShowDialog();
+            this.Visible = true;
+        }
     }
 }

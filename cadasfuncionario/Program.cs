@@ -16,7 +16,7 @@ namespace cadasfuncionario
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new formcadas());
+            Application.Run(new Menu());
         }
     }
 }

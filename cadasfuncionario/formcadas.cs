@@ -85,7 +85,7 @@ namespace cadasfuncionario
         private void button1_Click(object sender, EventArgs e)
         {
                 try
-            {
+                {
                 Funcionario fanc = new Funcionario();
                 fanc.Nome = tx_nome.Text;
                 fanc.Cpf = tx_cpf.Text;
@@ -118,28 +118,20 @@ namespace cadasfuncionario
 
                 if (cb_funcao.Text == "Médico")
                 {
-                    MessageBox.Show("Cadastro concluído!");
                     MessageBox.Show("Seu salário é de R$ 15.000,00");
-                    Close();
                 }
                 if (cb_funcao.Text == "Policial")
                 {
-                    MessageBox.Show("Cadastro concluído!");
                     MessageBox.Show("Seu salário é de R$ 17.000,00");
-                    Close();
-
                 }
                 if (cb_funcao.Text == "Advogado")
                 {
-                    MessageBox.Show("Cadastro concluído!");
                     MessageBox.Show("Seu salário é de R$ 12.000,00");
-                    Close();
 
                 }
                 if (cb_funcao.Text == "Professor")
                 {
                     MessageBox.Show("Seu salário é de R$ 10.000,00");
-                    Close();
                 }
 
             }
