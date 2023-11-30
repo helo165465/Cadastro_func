@@ -28,633 +28,562 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tx_voltar = new System.Windows.Forms.Button();
-            this.tx_consulta_emp = new System.Windows.Forms.Button();
-            this.tx_cancelar = new System.Windows.Forms.Button();
-            this.tx_salvar = new System.Windows.Forms.Button();
-            this.mySqlDataAdapter1 = new MySql.Data.MySqlClient.MySqlDataAdapter();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.mySqlCommand1 = new MySql.Data.MySqlClient.MySqlCommand();
-            this.label15 = new System.Windows.Forms.Label();
-            this.tx_razao = new System.Windows.Forms.TextBox();
-            this.tx_nome_fan = new System.Windows.Forms.TextBox();
-            this.tx_situacao = new System.Windows.Forms.ComboBox();
-            this.tx_data = new System.Windows.Forms.DateTimePicker();
-            this.tx_medio = new System.Windows.Forms.RadioButton();
-            this.tx_pequeno = new System.Windows.Forms.RadioButton();
-            this.tx_natureza = new System.Windows.Forms.ComboBox();
-            this.tx_grande = new System.Windows.Forms.RadioButton();
-            this.tx_telefone = new System.Windows.Forms.MaskedTextBox();
-            this.tx_simples = new System.Windows.Forms.RadioButton();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tx_lucro = new System.Windows.Forms.RadioButton();
-            this.label3 = new System.Windows.Forms.Label();
-            this.tx_real = new System.Windows.Forms.RadioButton();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.tx_nome_pro = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.tx_cpf = new System.Windows.Forms.MaskedTextBox();
-            this.tx_filial = new System.Windows.Forms.RadioButton();
-            this.tx_matriz = new System.Windows.Forms.RadioButton();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.tx = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.real = new System.Windows.Forms.RadioButton();
+            this.lucro = new System.Windows.Forms.RadioButton();
+            this.simples = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.tx_endereco = new System.Windows.Forms.TextBox();
-            this.tx_cnpj = new System.Windows.Forms.MaskedTextBox();
-            this.tx_capital = new System.Windows.Forms.TextBox();
-            this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.tx.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.matriz = new System.Windows.Forms.RadioButton();
+            this.filial = new System.Windows.Forms.RadioButton();
+            this.label11 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.grande = new System.Windows.Forms.RadioButton();
+            this.medio = new System.Windows.Forms.RadioButton();
+            this.pequeno = new System.Windows.Forms.RadioButton();
+            this.cpf_proprietario = new System.Windows.Forms.MaskedTextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.data = new System.Windows.Forms.DateTimePicker();
+            this.button5 = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.nome_proprietario = new System.Windows.Forms.TextBox();
+            this.natureza_juridica = new System.Windows.Forms.ComboBox();
+            this.endereco_completo = new System.Windows.Forms.ComboBox();
+            this.capital_social = new System.Windows.Forms.TextBox();
+            this.telefone = new System.Windows.Forms.MaskedTextBox();
+            this.situacao_cadastral = new System.Windows.Forms.ComboBox();
+            this.nome_fantasia = new System.Windows.Forms.TextBox();
+            this.razao_social = new System.Windows.Forms.TextBox();
+            this.cnpj = new System.Windows.Forms.MaskedTextBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tx_voltar
+            // groupBox3
             // 
-            this.tx_voltar.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.tx_voltar.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tx_voltar.ForeColor = System.Drawing.Color.White;
-            this.tx_voltar.Location = new System.Drawing.Point(31, 275);
-            this.tx_voltar.Name = "tx_voltar";
-            this.tx_voltar.Size = new System.Drawing.Size(118, 56);
-            this.tx_voltar.TabIndex = 19;
-            this.tx_voltar.Text = "VOLTAR";
-            this.tx_voltar.UseVisualStyleBackColor = false;
-            this.tx_voltar.Click += new System.EventHandler(this.tx_voltar_Click);
+            this.groupBox3.Controls.Add(this.real);
+            this.groupBox3.Controls.Add(this.lucro);
+            this.groupBox3.Controls.Add(this.simples);
+            this.groupBox3.Location = new System.Drawing.Point(387, 321);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(307, 46);
+            this.groupBox3.TabIndex = 104;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Regime Tributário";
             // 
-            // tx_consulta_emp
+            // real
             // 
-            this.tx_consulta_emp.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.tx_consulta_emp.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tx_consulta_emp.ForeColor = System.Drawing.Color.White;
-            this.tx_consulta_emp.Location = new System.Drawing.Point(31, 121);
-            this.tx_consulta_emp.Name = "tx_consulta_emp";
-            this.tx_consulta_emp.Size = new System.Drawing.Size(118, 56);
-            this.tx_consulta_emp.TabIndex = 20;
-            this.tx_consulta_emp.Text = "CONSULTAR EMPRESA";
-            this.tx_consulta_emp.UseVisualStyleBackColor = false;
-            this.tx_consulta_emp.Click += new System.EventHandler(this.tx_consulta_emp_Click);
+            this.real.AutoSize = true;
+            this.real.Location = new System.Drawing.Point(229, 14);
+            this.real.Name = "real";
+            this.real.Size = new System.Drawing.Size(47, 17);
+            this.real.TabIndex = 37;
+            this.real.Text = "Real";
+            this.real.UseVisualStyleBackColor = true;
             // 
-            // tx_cancelar
+            // lucro
             // 
-            this.tx_cancelar.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.tx_cancelar.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tx_cancelar.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.tx_cancelar.Location = new System.Drawing.Point(31, 348);
-            this.tx_cancelar.Name = "tx_cancelar";
-            this.tx_cancelar.Size = new System.Drawing.Size(118, 56);
-            this.tx_cancelar.TabIndex = 21;
-            this.tx_cancelar.Text = "CANCELAR";
-            this.tx_cancelar.UseVisualStyleBackColor = false;
-            this.tx_cancelar.Click += new System.EventHandler(this.tx_cancelar_Click);
+            this.lucro.AutoSize = true;
+            this.lucro.Location = new System.Drawing.Point(120, 12);
+            this.lucro.Name = "lucro";
+            this.lucro.Size = new System.Drawing.Size(104, 17);
+            this.lucro.TabIndex = 36;
+            this.lucro.Text = "Lucro Presumido";
+            this.lucro.UseVisualStyleBackColor = true;
             // 
-            // tx_salvar
+            // simples
             // 
-            this.tx_salvar.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.tx_salvar.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tx_salvar.ForeColor = System.Drawing.Color.White;
-            this.tx_salvar.Location = new System.Drawing.Point(31, 195);
-            this.tx_salvar.Name = "tx_salvar";
-            this.tx_salvar.Size = new System.Drawing.Size(118, 56);
-            this.tx_salvar.TabIndex = 22;
-            this.tx_salvar.Text = "SALVAR";
-            this.tx_salvar.UseVisualStyleBackColor = false;
-            this.tx_salvar.Click += new System.EventHandler(this.tx_salvar_Click);
+            this.simples.AutoSize = true;
+            this.simples.Location = new System.Drawing.Point(2, 14);
+            this.simples.Name = "simples";
+            this.simples.Size = new System.Drawing.Size(106, 17);
+            this.simples.TabIndex = 35;
+            this.simples.Text = "Simples Nacional";
+            this.simples.UseVisualStyleBackColor = true;
             // 
-            // mySqlDataAdapter1
+            // groupBox1
             // 
-            this.mySqlDataAdapter1.DeleteCommand = null;
-            this.mySqlDataAdapter1.InsertCommand = null;
-            this.mySqlDataAdapter1.SelectCommand = null;
-            this.mySqlDataAdapter1.UpdateCommand = null;
+            this.groupBox1.Controls.Add(this.matriz);
+            this.groupBox1.Controls.Add(this.filial);
+            this.groupBox1.Controls.Add(this.label11);
+            this.groupBox1.Location = new System.Drawing.Point(387, 51);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(149, 49);
+            this.groupBox1.TabIndex = 103;
+            this.groupBox1.TabStop = false;
             // 
-            // panel2
+            // matriz
             // 
-            this.panel2.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.tx_salvar);
-            this.panel2.Controls.Add(this.tx_voltar);
-            this.panel2.Controls.Add(this.tx_cancelar);
-            this.panel2.Controls.Add(this.tx_consulta_emp);
-            this.panel2.Location = new System.Drawing.Point(847, -4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 597);
-            this.panel2.TabIndex = 28;
+            this.matriz.AutoSize = true;
+            this.matriz.Location = new System.Drawing.Point(80, 24);
+            this.matriz.Name = "matriz";
+            this.matriz.Size = new System.Drawing.Size(52, 17);
+            this.matriz.TabIndex = 69;
+            this.matriz.TabStop = true;
+            this.matriz.Text = "matriz";
+            this.matriz.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // filial
             // 
-            this.button1.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.button1.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(58, 42);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(63, 33);
-            this.button1.TabIndex = 23;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = false;
+            this.filial.AutoSize = true;
+            this.filial.Location = new System.Drawing.Point(20, 24);
+            this.filial.Name = "filial";
+            this.filial.Size = new System.Drawing.Size(42, 17);
+            this.filial.TabIndex = 68;
+            this.filial.TabStop = true;
+            this.filial.Text = "filial";
+            this.filial.UseVisualStyleBackColor = true;
             // 
-            // mySqlCommand1
+            // label11
             // 
-            this.mySqlCommand1.CacheAge = 0;
-            this.mySqlCommand1.Connection = null;
-            this.mySqlCommand1.EnableCaching = false;
-            this.mySqlCommand1.Transaction = null;
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(16, 1);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(28, 13);
+            this.label11.TabIndex = 59;
+            this.label11.Text = "Tipo";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.label12);
+            this.groupBox2.Controls.Add(this.grande);
+            this.groupBox2.Controls.Add(this.medio);
+            this.groupBox2.Controls.Add(this.pequeno);
+            this.groupBox2.Location = new System.Drawing.Point(387, 105);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(281, 41);
+            this.groupBox2.TabIndex = 102;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "groupBox2";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(7, 1);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(91, 13);
+            this.label12.TabIndex = 60;
+            this.label12.Text = "Porte da Empresa";
+            // 
+            // grande
+            // 
+            this.grande.AutoSize = true;
+            this.grande.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.grande.Location = new System.Drawing.Point(201, 17);
+            this.grande.Name = "grande";
+            this.grande.Size = new System.Drawing.Size(60, 17);
+            this.grande.TabIndex = 46;
+            this.grande.Text = "Grande";
+            this.grande.UseVisualStyleBackColor = true;
+            // 
+            // medio
+            // 
+            this.medio.AutoSize = true;
+            this.medio.Location = new System.Drawing.Point(110, 17);
+            this.medio.Name = "medio";
+            this.medio.Size = new System.Drawing.Size(54, 17);
+            this.medio.TabIndex = 45;
+            this.medio.Text = "Médio";
+            this.medio.UseVisualStyleBackColor = true;
+            // 
+            // pequeno
+            // 
+            this.pequeno.AutoSize = true;
+            this.pequeno.CheckAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.pequeno.Location = new System.Drawing.Point(10, 17);
+            this.pequeno.Name = "pequeno";
+            this.pequeno.Size = new System.Drawing.Size(68, 17);
+            this.pequeno.TabIndex = 44;
+            this.pequeno.Text = "Pequeno";
+            this.pequeno.UseVisualStyleBackColor = true;
+            // 
+            // cpf_proprietario
+            // 
+            this.cpf_proprietario.Location = new System.Drawing.Point(392, 284);
+            this.cpf_proprietario.Mask = "000,000,000-00";
+            this.cpf_proprietario.Name = "cpf_proprietario";
+            this.cpf_proprietario.Size = new System.Drawing.Size(195, 20);
+            this.cpf_proprietario.TabIndex = 101;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button2.Location = new System.Drawing.Point(254, 444);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(207, 42);
+            this.button2.TabIndex = 100;
+            this.button2.Text = "VOLTAR";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // data
+            // 
+            this.data.Location = new System.Drawing.Point(217, 240);
+            this.data.Name = "data";
+            this.data.Size = new System.Drawing.Size(148, 20);
+            this.data.TabIndex = 99;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.button5.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button5.Location = new System.Drawing.Point(480, 444);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(207, 42);
+            this.button5.TabIndex = 98;
+            this.button5.Text = "CONSULTAR EMPRESA";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Font = new System.Drawing.Font("Mongolian Baiti", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(255, 27);
+            this.label15.Location = new System.Drawing.Point(389, 264);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(306, 30);
-            this.label15.TabIndex = 29;
-            this.label15.Text = "CADASTRE EMPRESA:";
+            this.label15.Size = new System.Drawing.Size(98, 13);
+            this.label15.TabIndex = 97;
+            this.label15.Text = "CPF do Proprietário";
             // 
-            // tx_razao
+            // label14
             // 
-            this.tx_razao.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tx_razao.Location = new System.Drawing.Point(158, 257);
-            this.tx_razao.Name = "tx_razao";
-            this.tx_razao.Size = new System.Drawing.Size(269, 25);
-            this.tx_razao.TabIndex = 3;
-            this.tx_razao.TextChanged += new System.EventHandler(this.razao_social_TextChanged);
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(389, 201);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(106, 13);
+            this.label14.TabIndex = 96;
+            this.label14.Text = "Nome do Proprietário";
             // 
-            // tx_nome_fan
+            // label13
             // 
-            this.tx_nome_fan.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tx_nome_fan.Location = new System.Drawing.Point(170, 44);
-            this.tx_nome_fan.Name = "tx_nome_fan";
-            this.tx_nome_fan.Size = new System.Drawing.Size(408, 25);
-            this.tx_nome_fan.TabIndex = 4;
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(393, 156);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(91, 13);
+            this.label13.TabIndex = 95;
+            this.label13.Text = "Natureza Jurídica";
             // 
-            // tx_situacao
+            // label10
             // 
-            this.tx_situacao.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tx_situacao.FormattingEnabled = true;
-            this.tx_situacao.Items.AddRange(new object[] {
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(216, 344);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(100, 13);
+            this.label10.TabIndex = 94;
+            this.label10.Text = "Endereço Completo";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(216, 305);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(71, 13);
+            this.label9.TabIndex = 93;
+            this.label9.Text = "Capital Social";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(215, 264);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(52, 13);
+            this.label8.TabIndex = 92;
+            this.label8.Text = "Telefone ";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(215, 224);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(137, 13);
+            this.label7.TabIndex = 91;
+            this.label7.Text = "Data de Início de Atividade";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(215, 175);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(96, 13);
+            this.label5.TabIndex = 90;
+            this.label5.Text = "Situação Cadastral";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(216, 133);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(78, 13);
+            this.label4.TabIndex = 89;
+            this.label4.Text = "Nome Fantasia";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(216, 96);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(70, 13);
+            this.label3.TabIndex = 88;
+            this.label3.Text = "Razão Social";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(221, 51);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(28, 13);
+            this.label2.TabIndex = 87;
+            this.label2.Text = "Cnpj";
+            // 
+            // nome_proprietario
+            // 
+            this.nome_proprietario.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.nome_proprietario.Location = new System.Drawing.Point(392, 218);
+            this.nome_proprietario.Name = "nome_proprietario";
+            this.nome_proprietario.Size = new System.Drawing.Size(276, 13);
+            this.nome_proprietario.TabIndex = 86;
+            // 
+            // natureza_juridica
+            // 
+            this.natureza_juridica.FormattingEnabled = true;
+            this.natureza_juridica.Items.AddRange(new object[] {
+            "EI – Empresário Individual",
+            "MEI – Microempreendedor Individual",
+            "Sociedade Anônima",
+            "Sociedade Simples Limitada",
+            "Sociedade Limitada Unipessoa"});
+            this.natureza_juridica.Location = new System.Drawing.Point(392, 172);
+            this.natureza_juridica.Name = "natureza_juridica";
+            this.natureza_juridica.Size = new System.Drawing.Size(276, 21);
+            this.natureza_juridica.TabIndex = 85;
+            // 
+            // endereco_completo
+            // 
+            this.endereco_completo.FormattingEnabled = true;
+            this.endereco_completo.Items.AddRange(new object[] {
+            "Acre (AC)",
+            "Alagoas (AL)",
+            "Amapá (AP)",
+            "Amazonas (AM)",
+            "Bahia (BA)",
+            "Ceará (CE)",
+            "Distrito Federal (DF)",
+            "Espírito Santo (ES)",
+            "Goiás (GO)",
+            "Maranhão (MA)",
+            "Mato Grosso (MT)",
+            "Mato Grosso do Sul (MS)",
+            "Minas Gerais (MG)",
+            "Pará (PA)",
+            "Paraíba (PB)",
+            "Paraná (PR)",
+            "Pernambuco (PE)",
+            "Piauí (PI)",
+            "Rio de Janeiro (RJ)",
+            "Rio Grande do Norte (RN)",
+            "Rio Grande do Sul (RS)",
+            "Rondônia (RO)",
+            "Roraima (RR)",
+            "Santa Catarina (SC)",
+            "São Paulo (SP)",
+            "Sergipe (SE)",
+            "Tocantins (TO)"});
+            this.endereco_completo.Location = new System.Drawing.Point(217, 360);
+            this.endereco_completo.Name = "endereco_completo";
+            this.endereco_completo.Size = new System.Drawing.Size(146, 21);
+            this.endereco_completo.TabIndex = 84;
+            // 
+            // capital_social
+            // 
+            this.capital_social.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.capital_social.Location = new System.Drawing.Point(219, 321);
+            this.capital_social.Name = "capital_social";
+            this.capital_social.Size = new System.Drawing.Size(144, 13);
+            this.capital_social.TabIndex = 83;
+            // 
+            // telefone
+            // 
+            this.telefone.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.telefone.Location = new System.Drawing.Point(218, 280);
+            this.telefone.Mask = "(00) 00000-0000";
+            this.telefone.Name = "telefone";
+            this.telefone.Size = new System.Drawing.Size(146, 13);
+            this.telefone.TabIndex = 82;
+            // 
+            // situacao_cadastral
+            // 
+            this.situacao_cadastral.FormattingEnabled = true;
+            this.situacao_cadastral.Items.AddRange(new object[] {
             "Ativa",
             "Nula",
             "Suspensa",
             "Inapta",
             "Baixada"});
-            this.tx_situacao.Location = new System.Drawing.Point(212, 215);
-            this.tx_situacao.Name = "tx_situacao";
-            this.tx_situacao.Size = new System.Drawing.Size(264, 24);
-            this.tx_situacao.TabIndex = 8;
+            this.situacao_cadastral.Location = new System.Drawing.Point(218, 190);
+            this.situacao_cadastral.Name = "situacao_cadastral";
+            this.situacao_cadastral.Size = new System.Drawing.Size(146, 21);
+            this.situacao_cadastral.TabIndex = 81;
             // 
-            // tx_data
+            // nome_fantasia
             // 
-            this.tx_data.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tx_data.Location = new System.Drawing.Point(179, 178);
-            this.tx_data.Name = "tx_data";
-            this.tx_data.Size = new System.Drawing.Size(297, 25);
-            this.tx_data.TabIndex = 7;
+            this.nome_fantasia.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.nome_fantasia.Location = new System.Drawing.Point(218, 147);
+            this.nome_fantasia.Name = "nome_fantasia";
+            this.nome_fantasia.Size = new System.Drawing.Size(146, 13);
+            this.nome_fantasia.TabIndex = 80;
             // 
-            // tx_medio
+            // razao_social
             // 
-            this.tx_medio.AutoSize = true;
-            this.tx_medio.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tx_medio.ForeColor = System.Drawing.Color.White;
-            this.tx_medio.Location = new System.Drawing.Point(6, 76);
-            this.tx_medio.Name = "tx_medio";
-            this.tx_medio.Size = new System.Drawing.Size(77, 20);
-            this.tx_medio.TabIndex = 17;
-            this.tx_medio.TabStop = true;
-            this.tx_medio.Text = "MÉDIO";
-            this.tx_medio.UseVisualStyleBackColor = true;
+            this.razao_social.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.razao_social.Location = new System.Drawing.Point(218, 112);
+            this.razao_social.Name = "razao_social";
+            this.razao_social.Size = new System.Drawing.Size(146, 13);
+            this.razao_social.TabIndex = 79;
             // 
-            // tx_pequeno
+            // cnpj
             // 
-            this.tx_pequeno.AutoSize = true;
-            this.tx_pequeno.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tx_pequeno.ForeColor = System.Drawing.Color.White;
-            this.tx_pequeno.Location = new System.Drawing.Point(6, 49);
-            this.tx_pequeno.Name = "tx_pequeno";
-            this.tx_pequeno.Size = new System.Drawing.Size(98, 20);
-            this.tx_pequeno.TabIndex = 16;
-            this.tx_pequeno.TabStop = true;
-            this.tx_pequeno.Text = "PEQUENO";
-            this.tx_pequeno.UseVisualStyleBackColor = true;
+            this.cnpj.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.cnpj.Location = new System.Drawing.Point(219, 69);
+            this.cnpj.Mask = "00,000,000/0000-00";
+            this.cnpj.Name = "cnpj";
+            this.cnpj.Size = new System.Drawing.Size(146, 13);
+            this.cnpj.TabIndex = 78;
             // 
-            // tx_natureza
+            // button3
             // 
-            this.tx_natureza.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tx_natureza.FormattingEnabled = true;
-            this.tx_natureza.Items.AddRange(new object[] {
-            "EI – Empresário Individual",
-            "MEI – Microempreendedor Individual",
-            "Sociedade Anônima",
-            "Sociedade Simples Limitada",
-            "Sociedade Limitada Unipessoal"});
-            this.tx_natureza.Location = new System.Drawing.Point(202, 375);
-            this.tx_natureza.Name = "tx_natureza";
-            this.tx_natureza.Size = new System.Drawing.Size(225, 24);
-            this.tx_natureza.TabIndex = 10;
+            this.button3.BackColor = System.Drawing.Color.Lime;
+            this.button3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button3.Location = new System.Drawing.Point(480, 387);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(207, 42);
+            this.button3.TabIndex = 77;
+            this.button3.Text = "SALVAR";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // tx_grande
+            // button1
             // 
-            this.tx_grande.AutoSize = true;
-            this.tx_grande.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tx_grande.ForeColor = System.Drawing.Color.White;
-            this.tx_grande.Location = new System.Drawing.Point(6, 23);
-            this.tx_grande.Name = "tx_grande";
-            this.tx_grande.Size = new System.Drawing.Size(91, 20);
-            this.tx_grande.TabIndex = 18;
-            this.tx_grande.TabStop = true;
-            this.tx_grande.Text = "GRANDE";
-            this.tx_grande.UseVisualStyleBackColor = true;
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button1.Location = new System.Drawing.Point(254, 387);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(207, 42);
+            this.button1.TabIndex = 76;
+            this.button1.Text = "CANCELAR";
+            this.button1.UseVisualStyleBackColor = false;
             // 
-            // tx_telefone
+            // label1
             // 
-            this.tx_telefone.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tx_telefone.Location = new System.Drawing.Point(142, 90);
-            this.tx_telefone.Name = "tx_telefone";
-            this.tx_telefone.Size = new System.Drawing.Size(241, 25);
-            this.tx_telefone.TabIndex = 24;
-            // 
-            // tx_simples
-            // 
-            this.tx_simples.AutoSize = true;
-            this.tx_simples.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tx_simples.ForeColor = System.Drawing.Color.White;
-            this.tx_simples.Location = new System.Drawing.Point(6, 19);
-            this.tx_simples.Name = "tx_simples";
-            this.tx_simples.Size = new System.Drawing.Size(171, 20);
-            this.tx_simples.TabIndex = 13;
-            this.tx_simples.TabStop = true;
-            this.tx_simples.Text = "SIMPLES NACIONAL";
-            this.tx_simples.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(31, 183);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(128, 16);
-            this.label2.TabIndex = 27;
-            this.label2.Text = "DATA DE ÍNICIO:";
-            // 
-            // tx_lucro
-            // 
-            this.tx_lucro.AutoSize = true;
-            this.tx_lucro.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tx_lucro.ForeColor = System.Drawing.Color.White;
-            this.tx_lucro.Location = new System.Drawing.Point(6, 48);
-            this.tx_lucro.Name = "tx_lucro";
-            this.tx_lucro.Size = new System.Drawing.Size(169, 20);
-            this.tx_lucro.TabIndex = 14;
-            this.tx_lucro.TabStop = true;
-            this.tx_lucro.Text = "LUCRO PRESUMIDO";
-            this.tx_lucro.UseVisualStyleBackColor = true;
-            this.tx_lucro.CheckedChanged += new System.EventHandler(this.tx_lucro_CheckedChanged);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(31, 140);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 16);
-            this.label3.TabIndex = 28;
-            this.label3.Text = "CNPJ:";
-            // 
-            // tx_real
-            // 
-            this.tx_real.AutoSize = true;
-            this.tx_real.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tx_real.ForeColor = System.Drawing.Color.White;
-            this.tx_real.Location = new System.Drawing.Point(6, 74);
-            this.tx_real.Name = "tx_real";
-            this.tx_real.Size = new System.Drawing.Size(67, 20);
-            this.tx_real.TabIndex = 15;
-            this.tx_real.TabStop = true;
-            this.tx_real.Text = "REAL";
-            this.tx_real.UseVisualStyleBackColor = true;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(31, 96);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(86, 16);
-            this.label4.TabIndex = 29;
-            this.label4.Text = "TELEFONE:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(31, 50);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(133, 16);
-            this.label5.TabIndex = 30;
-            this.label5.Text = "NOME FANTASIA:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(31, 223);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(181, 16);
-            this.label6.TabIndex = 31;
-            this.label6.Text = "SITUAÇÃO CADASTRAL:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(31, 263);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(121, 16);
-            this.label7.TabIndex = 32;
-            this.label7.Text = "RAZÃO SOCIAL:";
-            // 
-            // tx_nome_pro
-            // 
-            this.tx_nome_pro.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tx_nome_pro.Location = new System.Drawing.Point(107, 10);
-            this.tx_nome_pro.Name = "tx_nome_pro";
-            this.tx_nome_pro.Size = new System.Drawing.Size(471, 25);
-            this.tx_nome_pro.TabIndex = 6;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(31, 305);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(37, 16);
-            this.label8.TabIndex = 33;
-            this.label8.Text = "CPF:";
-            // 
-            // tx_cpf
-            // 
-            this.tx_cpf.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tx_cpf.Location = new System.Drawing.Point(158, 299);
-            this.tx_cpf.Mask = "000.000.000-00";
-            this.tx_cpf.Name = "tx_cpf";
-            this.tx_cpf.Size = new System.Drawing.Size(115, 25);
-            this.tx_cpf.TabIndex = 34;
-            // 
-            // tx_filial
-            // 
-            this.tx_filial.AutoSize = true;
-            this.tx_filial.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tx_filial.ForeColor = System.Drawing.Color.White;
-            this.tx_filial.Location = new System.Drawing.Point(6, 21);
-            this.tx_filial.Name = "tx_filial";
-            this.tx_filial.Size = new System.Drawing.Size(75, 20);
-            this.tx_filial.TabIndex = 11;
-            this.tx_filial.TabStop = true;
-            this.tx_filial.Text = "FILIAL";
-            this.tx_filial.UseVisualStyleBackColor = true;
-            // 
-            // tx_matriz
-            // 
-            this.tx_matriz.AutoSize = true;
-            this.tx_matriz.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tx_matriz.ForeColor = System.Drawing.Color.White;
-            this.tx_matriz.Location = new System.Drawing.Point(6, 48);
-            this.tx_matriz.Name = "tx_matriz";
-            this.tx_matriz.Size = new System.Drawing.Size(85, 20);
-            this.tx_matriz.TabIndex = 12;
-            this.tx_matriz.TabStop = true;
-            this.tx_matriz.Text = "MATRIZ";
-            this.tx_matriz.UseVisualStyleBackColor = true;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(31, 344);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(91, 16);
-            this.label9.TabIndex = 35;
-            this.label9.Text = "ENDEREÇO:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(31, 378);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(165, 16);
-            this.label10.TabIndex = 36;
-            this.label10.Text = "NATUREZA JURÍDICA:";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(31, 421);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(74, 16);
-            this.label12.TabIndex = 38;
-            this.label12.Text = "CAPITAL:";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(31, 16);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(55, 16);
-            this.label13.TabIndex = 39;
-            this.label13.Text = "NOME:";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.panel1.Controls.Add(this.tx);
-            this.panel1.Controls.Add(this.groupBox2);
-            this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Controls.Add(this.tx_endereco);
-            this.panel1.Controls.Add(this.tx_cnpj);
-            this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.tx_capital);
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.tx_cpf);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.tx_nome_pro);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.tx_telefone);
-            this.panel1.Controls.Add(this.tx_natureza);
-            this.panel1.Controls.Add(this.tx_data);
-            this.panel1.Controls.Add(this.tx_situacao);
-            this.panel1.Controls.Add(this.tx_nome_fan);
-            this.panel1.Controls.Add(this.tx_razao);
-            this.panel1.Location = new System.Drawing.Point(12, 73);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(803, 458);
-            this.panel1.TabIndex = 27;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // tx
-            // 
-            this.tx.Controls.Add(this.tx_filial);
-            this.tx.Controls.Add(this.tx_matriz);
-            this.tx.ForeColor = System.Drawing.Color.White;
-            this.tx.Location = new System.Drawing.Point(522, 344);
-            this.tx.Name = "tx";
-            this.tx.Size = new System.Drawing.Size(200, 75);
-            this.tx.TabIndex = 45;
-            this.tx.TabStop = false;
-            this.tx.Text = "TIPO:";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.tx_simples);
-            this.groupBox2.Controls.Add(this.tx_lucro);
-            this.groupBox2.Controls.Add(this.tx_real);
-            this.groupBox2.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.ForeColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(522, 224);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(200, 100);
-            this.groupBox2.TabIndex = 44;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "REGIME TRIBUTÁRIO:";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.tx_grande);
-            this.groupBox1.Controls.Add(this.tx_pequeno);
-            this.groupBox1.Controls.Add(this.tx_medio);
-            this.groupBox1.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(522, 96);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(210, 107);
-            this.groupBox1.TabIndex = 43;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "PORTE DA EMPRESA:";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
-            // 
-            // tx_endereco
-            // 
-            this.tx_endereco.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tx_endereco.Location = new System.Drawing.Point(158, 335);
-            this.tx_endereco.Name = "tx_endereco";
-            this.tx_endereco.Size = new System.Drawing.Size(269, 25);
-            this.tx_endereco.TabIndex = 42;
-            // 
-            // tx_cnpj
-            // 
-            this.tx_cnpj.Location = new System.Drawing.Point(142, 140);
-            this.tx_cnpj.Name = "tx_cnpj";
-            this.tx_cnpj.Size = new System.Drawing.Size(241, 22);
-            this.tx_cnpj.TabIndex = 41;
-            // 
-            // tx_capital
-            // 
-            this.tx_capital.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tx_capital.Location = new System.Drawing.Point(114, 418);
-            this.tx_capital.Name = "tx_capital";
-            this.tx_capital.Size = new System.Drawing.Size(269, 25);
-            this.tx_capital.TabIndex = 5;
-            this.tx_capital.TextChanged += new System.EventHandler(this.tx_capital_TextChanged);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Modern No. 20", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(263, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(358, 31);
+            this.label1.TabIndex = 75;
+            this.label1.Text = "CADASTRO DE EMPRESA";
             // 
             // CadasEmp
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::cadasfuncionario.Properties.Resources.wp1920773;
-            this.ClientSize = new System.Drawing.Size(1008, 559);
+            this.ClientSize = new System.Drawing.Size(933, 505);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.cpf_proprietario);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.data);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.nome_proprietario);
+            this.Controls.Add(this.natureza_juridica);
+            this.Controls.Add(this.endereco_completo);
+            this.Controls.Add(this.capital_social);
+            this.Controls.Add(this.telefone);
+            this.Controls.Add(this.situacao_cadastral);
+            this.Controls.Add(this.nome_fantasia);
+            this.Controls.Add(this.razao_social);
+            this.Controls.Add(this.cnpj);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label1);
             this.Name = "CadasEmp";
             this.Text = "CadasEmp";
-            this.Load += new System.EventHandler(this.CadasEmp_Load);
-            this.panel2.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.tx.ResumeLayout(false);
-            this.tx.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Button tx_voltar;
-        private System.Windows.Forms.Button tx_consulta_emp;
-        private System.Windows.Forms.Button tx_cancelar;
-        private System.Windows.Forms.Button tx_salvar;
-        private MySql.Data.MySqlClient.MySqlDataAdapter mySqlDataAdapter1;
-        private System.Windows.Forms.Panel panel2;
-        private MySql.Data.MySqlClient.MySqlCommand mySqlCommand1;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox tx_razao;
-        private System.Windows.Forms.TextBox tx_nome_fan;
-        private System.Windows.Forms.ComboBox tx_situacao;
-        private System.Windows.Forms.DateTimePicker tx_data;
-        private System.Windows.Forms.RadioButton tx_medio;
-        private System.Windows.Forms.RadioButton tx_pequeno;
-        private System.Windows.Forms.ComboBox tx_natureza;
-        private System.Windows.Forms.RadioButton tx_grande;
-        private System.Windows.Forms.MaskedTextBox tx_telefone;
-        private System.Windows.Forms.RadioButton tx_simples;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RadioButton tx_lucro;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.RadioButton tx_real;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox tx_nome_pro;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.MaskedTextBox tx_cpf;
-        private System.Windows.Forms.RadioButton tx_filial;
-        private System.Windows.Forms.RadioButton tx_matriz;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox tx_capital;
-        private System.Windows.Forms.MaskedTextBox tx_cnpj;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox tx_endereco;
+
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.RadioButton real;
+        private System.Windows.Forms.RadioButton lucro;
+        private System.Windows.Forms.RadioButton simples;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton matriz;
+        private System.Windows.Forms.RadioButton filial;
+        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.GroupBox tx;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.RadioButton grande;
+        private System.Windows.Forms.RadioButton medio;
+        private System.Windows.Forms.RadioButton pequeno;
+        private System.Windows.Forms.MaskedTextBox cpf_proprietario;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DateTimePicker data;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox nome_proprietario;
+        private System.Windows.Forms.ComboBox natureza_juridica;
+        private System.Windows.Forms.ComboBox endereco_completo;
+        private System.Windows.Forms.TextBox capital_social;
+        private System.Windows.Forms.MaskedTextBox telefone;
+        private System.Windows.Forms.ComboBox situacao_cadastral;
+        private System.Windows.Forms.TextBox nome_fantasia;
+        private System.Windows.Forms.TextBox razao_social;
+        private System.Windows.Forms.MaskedTextBox cnpj;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
     }
 }
