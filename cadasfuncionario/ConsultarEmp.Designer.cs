@@ -31,9 +31,7 @@
             this.tabelaEmp = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tabelaEmp)).BeginInit();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabelaEmp
@@ -63,23 +61,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.panel1.Controls.Add(this.button1);
             this.panel1.Location = new System.Drawing.Point(-28, -57);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1043, 106);
             this.panel1.TabIndex = 2;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.button1.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(53, 69);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(86, 34);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "VOLTAR";
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // ConsultarEmp
             // 
@@ -93,7 +78,6 @@
             this.Name = "ConsultarEmp";
             this.Text = "ConsultarEmp";
             ((System.ComponentModel.ISupportInitialize)(this.tabelaEmp)).EndInit();
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -104,6 +88,5 @@
         private System.Windows.Forms.DataGridView tabelaEmp;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
     }
 }

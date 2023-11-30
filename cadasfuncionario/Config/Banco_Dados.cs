@@ -14,8 +14,8 @@ namespace cadasfuncionario.Config
         private string _servidor = "localhost";
         private string _porta = "3306";
         private string _ususario = "root";
-        private string _senha = "Anjo 123";
-        private string _bancoDadosNome = "Empresa_X2A_bd";
+        private string _senha = "root";
+        private string _bancoDadosNome = "empresa_helo_bd";
         private MySqlConnection connection;
         private MySqlCommand command;
 

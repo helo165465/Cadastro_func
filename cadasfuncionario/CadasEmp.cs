@@ -60,50 +60,50 @@ namespace cadasfuncionario
 
                 try
                 {
-                    Empresa emp = new Empresa();
-                    emp.RazaoSocial = razao_social.Text;
-                    emp.Nomefantasia = nome_fantasia.Text;
-                    emp.SituacaoCadastral = situacao_cadastral.Text;
-                    emp.DataInicio = Convert.ToDateTime(data.Text);
-                    emp.Telefone = telefone.Text;
-                    emp.CapitalSocial = Convert.ToDouble(capital_social.Text);
-                    emp.EnderecoCompleto = endereco_completo.Text;
-                    emp.NaturezaJuridica = natureza_juridica.Text;
-                    emp.Nome_Proprietario = nome_proprietario.Text;
-                    emp.Cpf_Proprietario = cpf_proprietario.Text;
-                    emp.Cnpj = cnpj.Text;
+                    Empresa empre = new Empresa();
+                    empre.RazaoSocial = tx_razao.Text;
+                    empre.Nomefantasia = tx_nome_fan.Text;
+                    empre.SituacaoCadastral = tx_situacao.Text;
+                    empre.DataInicio = Convert.ToDateTime(tx_data.Text);
+                    empre.Telefone = tx_telkefone.Text;
+                    empre.CapitalSocial = Convert.ToDouble(tx_capital.Text);
+                    empre.EnderecoCompleto = tx_endereco.Text;
+                    empre.NaturezaJuridica = tx_natureza.Text;
+                    empre.Nome_Proprietario = tx_nome.Text;
+                    empre.Cpf_Proprietario = tx_cpf.Text;
+                    empre.Cnpj = tx_cnpj.Text;
 
 
-                    if (Cnpj.Validar(emp.Cnpj) == false)
+                    if (Cnpj.Validar(empre.Cnpj) == false)
                     {
                         MessageBox.Show("CNPJ inválido", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     }
-                    else if (Validar.CPF(emp.Cpf_Proprietario) == false)
+                    else if (Validar.CPF(empre.Cpf_Proprietario) == false)
                     {
                         MessageBox.Show("CPF inválido", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     }
-                    else if (emp.RazaoSocial == "" || emp.RazaoSocial == null || emp.Nomefantasia == "" || emp.Nomefantasia == null || emp.SituacaoCadastral == "" || emp.SituacaoCadastral == null || emp.Telefone == null || emp.Telefone == "" || emp.CapitalSocial == null || emp.EnderecoCompleto == null || emp.EnderecoCompleto == "" || emp.NaturezaJuridica == null || emp.NaturezaJuridica == "" || emp.Nome_Proprietario == null || emp.Nome_Proprietario == "")
+                    else if (empre.RazaoSocial == "" || empre.RazaoSocial == null || empre.Nomefantasia == "" || empre.Nomefantasia == null || empre.SituacaoCadastral == "" || empre.SituacaoCadastral == null || empre.Telefone == null || empre.Telefone == "" || empre.CapitalSocial == null || empre.EnderecoCompleto == null || empre.EnderecoCompleto == "" || empre.NaturezaJuridica == null || empre.NaturezaJuridica == "" || empre.Nome_Proprietario == null || empre.Nome_Proprietario == "")
                     {
                         MessageBox.Show("Todos os campos são obrigatórios. Por favor preencher os campos corretamente.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
                     }
-                    else if (filial.Checked == false && matriz.Checked == false)
+                    else if (tx_filial.Checked == false && tx_matriz.Checked == false)
                     {
                         MessageBox.Show("Todos os campos são obrigatórios. Por favor preencher os campos corretamente.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     }
 
-                    else if (pequeno.Checked == false && medio.Checked == false && grande.Checked == false)
+                    else if (tx_pequeno.Checked == false && tx_medio.Checked == false && tx_grande.Checked == false)
                     {
                         MessageBox.Show("Todos os campos são obrigatórios. Por favor preencher os campos corretamente.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     }
 
-                    else if (simples.Checked == false && lucro.Checked == false && real.Checked == false)
+                    else if (tx_simples.Checked == false && tx_lucro.Checked == false && tx_real.Checked == false)
                     {
                         MessageBox.Show("Todos os campos são obrigatórios. Por favor preencher os campos corretamente.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     }
                     else
                     {
-                        inserir(emp);
+                        inserir(empre);
                     }
                 }
                 catch (Exception ex)
@@ -119,6 +119,21 @@ namespace cadasfuncionario
             this.Visible = false;
             ep.ShowDialog();
             this.Visible = true;
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
